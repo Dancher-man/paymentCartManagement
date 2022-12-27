@@ -12,5 +12,3 @@ RUN pip install -r /usr/src/req.txt
 COPY . /usr/src/paymentCartManagement
 
 EXPOSE 8000
-CMD ["python", "manage.py", "migrate"]
-#CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
