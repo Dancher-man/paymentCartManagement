@@ -3,9 +3,10 @@ version: '3.7'
 services:
   web:
     build: .
-    command:
-      - python /usr/src/paymentCartManagement/manage.py migrate
-      - python /usr/src/paymentCartManagement/manage.py runserver 0.0.0.0:8000
+    command: >
+      bash -c "
+            python manage.py migrate --noinput &&
+            python manage.py runserver 0.0.0.0:8000 --noreload"
     volumes:
       - .:/usr/src/paymentCartManagement
     ports:
