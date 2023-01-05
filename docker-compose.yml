@@ -4,8 +4,8 @@ services:
   web:
     build: .
     command:
+      - python /usr/src/paymentCartManagement/manage.py migrate
       - python /usr/src/paymentCartManagement/manage.py runserver 0.0.0.0:8000
-      - exec web python manage.py migrate --noinput
     volumes:
       - .:/usr/src/paymentCartManagement
     ports:
