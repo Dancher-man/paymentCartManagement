@@ -1,0 +1,16 @@
+{% extends "admin_extra_buttons/action_page.html" %}
+{% load i18n static admin_list admin_urls %}
+
+{% block action-content %}
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ form.as_p }}#}
+{#        <button type="submit">Моя кнопка</button>#}
+{#    </form>#}
+    <form method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="status" value="check_status" />
+        <input type="submit" value="Проверить статусы карт">
+    </form>
+
+{% endblock %}

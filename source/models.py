@@ -23,6 +23,7 @@ class PaymentCard(models.Model):
         return self.owners_name
 
     class Meta:
+        db_table = 'payment_cart'
         verbose_name = 'Платежная карта'
         verbose_name_plural = 'Платежные карты'
         ordering = ['-created_at']
@@ -39,6 +40,7 @@ class Purchases(models.Model):
         return self.product_name
 
     class Meta:
+        db_table = 'purchases'
         verbose_name = 'Покупка'
         verbose_name_plural = 'Покупки'
         ordering = ['-purchase_date']

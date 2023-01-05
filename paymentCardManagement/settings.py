@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'source.apps.SourceConfig',
+    'admin_extra_buttons',
 ]
 
 MIDDLEWARE = [
