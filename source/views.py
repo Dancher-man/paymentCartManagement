@@ -12,7 +12,7 @@ from source.models import PaymentCard
 
 def check_status_view():
     count = 0
-    check_status_cart = PaymentCard.objects.filter(end_date_card_activity__lte=datetime.now() + timedelta(days=30 * 20))
+    check_status_cart = PaymentCard.objects.filter(end_date_card_activity__lte=datetime.now())
 
     if check_status_cart:
         cart_bulk_update_list = []
