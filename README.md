@@ -15,11 +15,6 @@
 ```bash 
 docker-compose up -d --build
 ```
-
-### Затем накатите миграцию с помощью команды
-```bash
-docker-compose exec web python manage.py migrate --noinput
-```
 ### Затем создайте суперюзера с помощью команды
 ```bash
 docker-compose exec web python manage.py createsuperuser

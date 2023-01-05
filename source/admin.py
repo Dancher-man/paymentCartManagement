@@ -4,7 +4,7 @@ from source.models import PaymentCard, Purchases
 from source.views import check_status_view
 
 """!!!!!!!!!!!!!!!!!!!!!!!!!!!"""
-from admin_extra_buttons.api import ExtraButtonsMixin, button, confirm_action, link, view
+from admin_extra_buttons.api import ExtraButtonsMixin, button
 from admin_extra_buttons.utils import HttpResponseRedirectToReferrer
 
 
